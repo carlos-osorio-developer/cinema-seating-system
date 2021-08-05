@@ -8,10 +8,14 @@ and open the template in the editor.
     <head>
         <meta charset="UTF-8">
         <title>Reserva tu silla</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap" rel="stylesheet">
+        <link href="./assets/css/main.css" rel="stylesheet">
     </head>
     <body>
-        <main style="display: flex; flex-direction: column; align-items: center;">
-            <h1>¡Reserva tu silla!</h1>
+        <main>
+            <h1 class="titles">¡Reserva tu silla!</h1>
         </main>
         <?php
         // put your code here
