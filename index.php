@@ -41,6 +41,10 @@ and open the template in the editor.
                         <label for="liberar">Liberar</label>
                         <input id="liberar" type="radio" name="estado" value="liberar">
                     </div>  
+                    <div class="flex-row acciones">                        
+                        <input type="submit" name="enviar" value="Enviar">
+                        <input type="submit" name="reset" value="Resetear">
+                    </div>
                 </fieldset>
             </form>
         </main>
