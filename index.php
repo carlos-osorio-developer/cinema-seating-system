@@ -21,7 +21,13 @@ and open the template in the editor.
             
             <?php
                 include './escenario.php';                
-                $sillas=[''];
+                $sillas=[
+                    ['L','L','L','L','L'],
+                    ['L','L','L','L','L'],
+                    ['L','L','L','L','L'],
+                    ['L','L','L','L','L'],
+                    ['L','L','L','L','L']
+                ];
                 mostrar($sillas);                
             ?>
             
