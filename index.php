@@ -20,15 +20,17 @@ and open the template in the editor.
             <p>En este sitio puedes reservar tus asientos preferidos.</p>  
             
             <?php
-                include './escenario.php';                
-                $sillas=[
-                    ['L','L','L','L','L'],
-                    ['L','L','L','L','L'],
-                    ['L','L','L','L','L'],
-                    ['L','L','L','L','L'],
-                    ['L','L','L','L','L']
-                ];
-                mostrar($sillas);                
+                include './escenario.php';    
+                if(isset($_REQUEST(["reset"])) || !isset($_REQUEST(["enviar"]))) {
+                    $sillas=[
+                        ['L','L','L','L','L'],
+                        ['L','L','L','L','L'],
+                        ['L','L','L','L','L'],
+                        ['L','L','L','L','L'],
+                        ['L','L','L','L','L']
+                    ];
+                    mostrar($sillas);                
+                }
             ?>
             
             <form method="post">
