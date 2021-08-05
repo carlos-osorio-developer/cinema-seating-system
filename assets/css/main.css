@@ -15,10 +15,17 @@ and open the template in the editor.
     padding: 0;
 }
 
-main {
+.flex-col {
     display: flex; 
     flex-direction: column; 
     align-items: center;
+}
+
+.flex-row {
+    display: flex; 
+    flex-direction: row; 
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .titles {
@@ -27,4 +34,26 @@ main {
 
 h1 {
     padding: 20px 0px;
+}
+
+form {
+    width: 30%;
+    margin: 20px 0;    
+}
+    
+fieldset {
+    padding: 10px 0;
+}
+
+.radiales {
+    width: 85px;
+    margin: 2px 0;
+}
+
+.text-input {
+    margin: 10px;
+}
+
+#reservar, #comprar, #liberar {
+    margin: 0 0 0 auto;
 }

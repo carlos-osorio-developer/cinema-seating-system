@@ -14,9 +14,35 @@ and open the template in the editor.
         <link href="./assets/css/main.css" rel="stylesheet">
     </head>
     <body>
-        <main>
+        <main class="flex-col">
             <h1 class="titles">¡Reserva tu asiento!</h1>
-            <p>En este sitio puedes reservar tus asientos preferidos.</p>            
+            <p>En este sitio puedes reservar tus asientos preferidos.</p>  
+            <form method="post">
+                <fieldset class="flex-col">
+                    <div class="flex-row">
+                        <div class="text-input">
+                            <label for="fila">Fila: </label>
+                            <input id="fila" type="text" name="fila" placeholder="1 al 5" size="3">
+                        </div>
+                        <div class="text-input">
+                            <label for="puesto">Puesto: </label>
+                            <input id="puesto" type="text" name="puesto" placeholder="1 al 5" size="3">
+                        </div>
+                    </div>
+                    <div class="flex-row radiales">
+                        <label for="reservar">Reservar</label>
+                        <input id="reservar" type="radio" name="estado" value="reservar">
+                    </div>
+                    <div class="flex-row radiales">
+                        <label for="comprar">Comprar</label>
+                        <input id="comprar" type="radio" name="estado" value="comprar">
+                    </div>
+                    <div class="flex-row radiales">
+                        <label for="liberar">Liberar</label>
+                        <input id="liberar" type="radio" name="estado" value="liberar">
+                    </div>  
+                </fieldset>
+            </form>
         </main>
         <?php
         // put your code here
