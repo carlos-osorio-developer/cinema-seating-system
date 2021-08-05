@@ -12,11 +12,19 @@ and open the template in the editor.
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap" rel="stylesheet">
         <link href="./assets/css/main.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/69c8e727d8.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <main class="flex-col">
             <h1 class="titles">¡Reserva tu asiento!</h1>
             <p>En este sitio puedes reservar tus asientos preferidos.</p>  
+            
+            <?php
+                include './escenario.php';                
+                $sillas=[''];
+                mostrar($sillas);                
+            ?>
+            
             <form method="post">
                 <fieldset class="flex-col">
                     <div class="flex-row">
@@ -47,9 +55,6 @@ and open the template in the editor.
                     </div>
                 </fieldset>
             </form>
-        </main>
-        <?php
-        // put your code here
-        ?>
+        </main>        
     </body>
 </html>
