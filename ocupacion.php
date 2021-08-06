@@ -24,10 +24,36 @@ if (isset($_POST['enviar'])){
         else if($sillas[$fila-1][$asiento-1] == 'R'){
             echo '<script language="javascript">alert("Esta silla ya está reservada");</script>';
         }
-        else if($sillas[$fila-1][$asiento-1] == 'R'){
+        else if($sillas[$fila-1][$asiento-1] == 'V'){
             echo '<script language="javascript">alert("Esta silla ya ha sido vendida");</script>';
         }
     }
+    
+    if ($estado == "comprar"){
+        if($sillas[$fila-1][$asiento-1] == 'L'){
+            $sillas[$fila-1][$asiento-1] = 'V';
+        }
+        else if($sillas[$fila-1][$asiento-1] == 'R'){
+            $sillas[$fila-1][$asiento-1] = 'V';
+        }
+        else if($sillas[$fila-1][$asiento-1] == 'V'){
+            echo '<script language="javascript">alert("Esta silla ya ha sido vendida");</script>';
+        }
+    }
+    
+    if ($estado == "liberar"){
+        if($sillas[$fila-1][$asiento-1] == 'L'){
+            echo '<script language="javascript">alert("Esta silla ya está libre");</script>';
+        }
+        else if($sillas[$fila-1][$asiento-1] == 'R'){
+            $sillas[$fila-1][$asiento-1] = 'L';
+        }
+        else if($sillas[$fila-1][$asiento-1] == 'V'){
+            echo '<script language="javascript">alert("Esta silla ya ha sido vendida");</script>';
+        }
+    }
+    
+    
     
     mostrar($sillas);
 }
