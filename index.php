@@ -21,7 +21,7 @@ and open the template in the editor.
             
             <?php
                 include './escenario.php';    
-                if(isset($_REQUEST(["reset"])) || !isset($_REQUEST(["enviar"]))) {
+                if(isset($_REQUEST["reset"]) || !isset($_REQUEST["enviar"])) {
                     $sillas=[
                         ['L','L','L','L','L'],
                         ['L','L','L','L','L'],
@@ -62,6 +62,15 @@ and open the template in the editor.
                         <input type="submit" name="reset" value="Resetear">
                     </div>
                 </fieldset>
+                <?php 
+                    $cadena = "";
+                    foreach ($sillas as $fila){
+                        foreach ($fila as $silla){
+                            $cadena = $cadena.$silla;
+                        }
+                    }                        
+                    echo "<input type='hidden' name='sillas' value=$cadena>";
+                ?>
             </form>
         </main>        
     </body>
