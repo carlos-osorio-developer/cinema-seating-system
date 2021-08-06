@@ -21,8 +21,13 @@ if (isset($_POST['enviar'])){
         if($sillas[$fila-1][$asiento-1] == 'L'){
             $sillas[$fila-1][$asiento-1] = 'R';
         }
-        else if($sillas[$fila-1][$asiento-1] == 'L'){
-            echo '<script language="javascript>alert()"';
+        else if($sillas[$fila-1][$asiento-1] == 'R'){
+            echo '<script language="javascript">alert("Esta silla ya está reservada");</script>';
+        }
+        else if($sillas[$fila-1][$asiento-1] == 'R'){
+            echo '<script language="javascript">alert("Esta silla ya ha sido vendida");</script>';
         }
     }
+    
+    mostrar($sillas);
 }

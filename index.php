@@ -49,7 +49,7 @@ and open the template in the editor.
                     </div>
                     <div class="flex-row radiales">
                         <label for="reservar">Reservar</label>
-                        <input id="reservar" type="radio" name="estado" value="reservar">
+                        <input id="reservar" type="radio" name="estado" value="reservar" checked>
                     </div>
                     <div class="flex-row radiales">
                         <label for="comprar">Comprar</label>
