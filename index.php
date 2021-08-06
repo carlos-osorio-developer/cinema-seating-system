@@ -20,7 +20,9 @@ and open the template in the editor.
             <p>En este sitio puedes reservar tus asientos preferidos.</p>  
             
             <?php
-                include './escenario.php';    
+                include './escenario.php';   
+                include './ocupacion.php';
+                
                 if(isset($_REQUEST["reset"]) || !isset($_REQUEST["enviar"])) {
                     $sillas=[
                         ['L','L','L','L','L'],
