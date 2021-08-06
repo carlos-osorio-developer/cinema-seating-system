@@ -129,8 +129,23 @@ i {
     background: #6eff61;
 }
 
+.amarillo {
+    background: #ffe869;
+}
+
+.rojo {
+    background: #ff674d;
+}
 .sala div:first-child {
     background: #6eff61;
     border-left: none;
 }
 
+footer {
+    text-align: right;
+}
+
+footer p {
+    font-size: 15px;
+    padding: 10px;
+}

@@ -12,12 +12,26 @@ function mostrar ($silleteria){
     }
     echo "</div>";
     
+    $bg = '';
     $i = 1;
     foreach ($silleteria as $fila){
         echo "<div class='fila flex-row'>";
         echo "<div class='item flex-col'>$i</div>";
         foreach ($fila as $silla) {
-            echo "<div class='item flex-col'>$silla</div>";
+            switch ($silla) {
+                case 'R':
+                    $bg = 'amarillo';
+                    break;
+                
+                case 'V':
+                    $bg = 'rojo';
+                    break;
+
+                default:
+                    $bg = '';
+                    break;
+            }
+            echo "<div class='item $bg flex-col'>$silla</div>";
         }
         echo "</div>";
         

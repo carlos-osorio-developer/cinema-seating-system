@@ -73,7 +73,8 @@ and open the template in the editor.
                     }                        
                     echo "<input type='hidden' name='sillas' value=$cadena>";
                 ?>
-            </form>
-        </main>        
+            </form>            
+        </main>   
+        <footer><p>Hecho por Carlos Osorio - Agosto de 2021</p></footer>
     </body>
 </html>
