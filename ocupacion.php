@@ -17,5 +17,12 @@ if (isset($_POST['enviar'])){
         }
     }
     
-    
+    if ($estado == "reservar"){
+        if($sillas[$fila-1][$asiento-1] == 'L'){
+            $sillas[$fila-1][$asiento-1] = 'R';
+        }
+        else if($sillas[$fila-1][$asiento-1] == 'L'){
+            echo '<script language="javascript>alert()"';
+        }
+    }
 }
